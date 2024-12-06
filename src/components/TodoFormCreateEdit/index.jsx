@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
-import { TodoForm } from "../TodoForm";
 import { addTodo, updateTodo } from "../../store/todoSlice";
 import { v4 as uuidv4 } from "uuid";
+import { TodoForm } from "../../components";
 
 export const TodoFormCreateEdit = ({ todo = null, onClose }) => {
     const dispatch = useDispatch();
@@ -26,9 +26,11 @@ export const TodoFormCreateEdit = ({ todo = null, onClose }) => {
                 title,
                 description,
                 completed: false,
-                createdAt: new Date().toLocaleString(),
+                createdAt: new Date().toISOString(),
             };
             dispatch(addTodo(newTodo));
+            setTitle("");
+            setDescription("");
         }
         if (onClose) onClose();
     };

@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { TodoForm, TodoItem, EditTodoDialog, FilterControls, Pagination } from "../../components";
+import {TodoItem, EditTodoDialog, FilterControls, Pagination, TodoFormCreateEdit} from "../../components";
 import {addTodo, updateTodo, setPagination, checkIsHasCompletedToDo} from "../../store/todoSlice";
 import styles from "./styles.module.css";
 import { v4 as uuidv4 } from "uuid";
@@ -78,7 +78,7 @@ export const TodoList = () => {
     return (
         <div className={styles.todoListContainer}>
             <h2>Add New Todo</h2>
-            <TodoForm
+            <TodoFormCreateEdit
                 title={newTitle}
                 description={newDescription}
                 onTitleChange={setNewTitle}
