@@ -1,0 +1,9 @@
+.filterControlsContainer {
+    display: flex;
+    gap: 20px;
+    padding: 40px 0;
+}
+
+.filterControlsContainer div {
+    width: 100%;
+}

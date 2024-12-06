@@ -1,0 +1,14 @@
+.paginationContainer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.paginationText {
+    margin: 0 10px;
+    align-self: center;
+}
+
+.paginationButton {
+    margin: 0 5px;
+}

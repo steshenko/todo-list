@@ -1,0 +1,10 @@
+.dialogContent {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.dialogActions {
+    display: flex;
+    justify-content: flex-end;
+}
