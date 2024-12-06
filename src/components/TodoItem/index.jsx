@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { Button, Checkbox, FormControlLabel } from "@mui/material";
+import { Checkbox, FormControlLabel } from "@mui/material";
+import { Button } from "../ui";
 import { useDispatch } from "react-redux";
 import { toggleComplete, removeTodo } from "../../store/todoSlice";
 import { DeleteTodoDialog } from "../DeleteTodoDialog";

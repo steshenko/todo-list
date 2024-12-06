@@ -1,14 +1,15 @@
 import React from "react";
-import { Dialog, DialogTitle } from "@mui/material";
+import { DialogTitle } from "@mui/material";
 import styles from "./styles.module.css";
+import { Modal } from "../ui";
 
 export const CustomDialog = ({ open, onClose, title, children }) => {
     return (
-        <Dialog open={open} onClose={onClose}>
+        <Modal open={open} onClose={onClose}>
             <div className={styles.container}>
                 {title && <DialogTitle>{title}</DialogTitle>}
                 {children}
             </div>
-        </Dialog>
+        </Modal>
     );
 };

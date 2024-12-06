@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "@mui/material";
+import { Button } from "../ui";
 import { CustomDialog } from "../CustomDialog";
 import styles from "./styles.module.css";
 
